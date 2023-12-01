@@ -1,0 +1,24 @@
+<%- include("header")  %>
+<%- include("nav")  %>
+<div id="page1">
+    
+  <div class="details">
+
+    <img height="250px" src="<%= book.link %>" alt="">
+
+    <h3>Book Name :- <%= book.name %></h3>
+    <h3>Author :- <%= book.author %></h3>
+    <h3>Description :- <%= book.description %></h3>
+    <h3>Pages :- <%= book.page %></h3>
+    <h3>Publication :- <%= book.publication %></h3>
+    <h3>Year :- <%= book.year %></h3>
+    <h3>Price :- <%= book.price %></h3>
+
+    <div class="btn">
+      <a href="/update/<%= book._id %>/author/<%= book.author %>"><button>Update</button></a>
+      <a href="/delete/<%= book._id %>/author/<%= book.author %>"><button>Delete</button></a>
+    </div>
+
+  </div>
+</div>
+<%- include("footer")  %>

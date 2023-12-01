@@ -1,0 +1,184 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+  }
+  html,body
+  {
+  height: 100%;
+  width: 100%;
+  }
+  
+  nav
+  {
+    height: 80px;
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    border-bottom: 2px solid black;
+  }
+  
+  nav a
+  {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-weight: 600;
+    transition: all ease 1s;
+  }
+  
+  nav a:hover
+  {
+    text-decoration: underline;
+  }
+  
+  #page1
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100% - 80px);
+    background-color: white;
+  }
+  
+  .regform 
+  {
+      height: 80%;
+      width: 25%;
+      background-color: salmon;
+      border-radius: 10px;
+      margin-top: 20px;
+  }
+  
+  .regform form
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .regform form input
+  {
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+  }
+  
+  .regform form button
+  {
+    margin-top: 15px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .card
+  {
+    min-height: 150px;
+    width: 300px;
+    padding: 10px;
+    background-color: salmon;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+  }
+  
+  .card h3
+  {
+    text-align: center;
+    text-transform: uppercase;
+    
+  }
+  
+  .card a #explore
+  {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  .details
+  {
+    min-height: 70vh;
+    width: 30%;
+    background-color: salmon;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .details h2
+  {
+    font-size: 20px;
+  }
+  
+  .details span
+  {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .details img{
+    border-radius: 10px;
+  }
+  
+  .details .btn
+  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+  }
+  
+  .details .btn button{
+    padding: 10px 20px ;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    /* background-color: salmon; */
+    
+  }
+  #form1 input{
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    margin-top: 30px;
+  }
+  #form1 button{
+    margin-top: 15px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+  }

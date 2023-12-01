@@ -1,0 +1,20 @@
+<%- include("header")  %>
+<%- include("nav")  %>
+<div id="page1">
+  <h1>Update Book</h1>
+  <div class="regform">
+    <form action="/update/<%= book._id %>/author/<%= book.author %>" method="post">
+        <input type="text" placeholder="Enter id" name="id" value="<%= book._id %>" readonly>
+        <input type="text" placeholder="Enter Book name" name="name" value="<%= book.name %>">
+        <input type="text" placeholder="Enter Author name" name="author" value="<%= book.author %>">
+        <input type="url" placeholder="Enter Image link" name="link" value="<%= book.link %>">
+        <input type="text" placeholder="Enter Book Description" name="description" value="<%= book.description %>">
+        <input type="number" placeholder="Enter Page Number" name="page" value="<%= book.page %>">
+        <input type="text" placeholder="Enter Publication" name="publication" value="<%= book.publication %>">
+        <input type="year" placeholder="Enter Year" name="year" value="<%= book.year %>">
+        <input type="number" placeholder="Enter Book Price" name="price" value="<%= book.price %>"> 
+        <button>update</button>
+    </form>
+</div>
+</div>
+<%- include("footer")  %>

@@ -1,0 +1,12 @@
+<% const arr = Object.keys(data) %> 
+
+<% arr.forEach(function(eleName, index){ %>
+      
+      <% if(eleName != "link"){ %>
+        <h2><%= eleName  %> = 
+          <span><%= data[eleName] %></span>
+        </h2>
+     <%  } %>
+      
+      
+    <% }) %>

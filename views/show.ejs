@@ -1,0 +1,26 @@
+<%- include("header")  %>
+<%- include("nav")  %>
+<div id="page1">
+    <h1>Welcome to Show Page</h1>
+    <% array.forEach(function(book,index){ %>
+
+    <div class="card">
+        <h3>
+            <%= book.name %>
+        </h3>
+        <h3>
+            <%= book.description %>
+        </h3>
+        <h3>
+            <%= book.author %>
+        </h3>
+
+        <!-- <a href="/details/<%= index %>/author/<%= book.author %>""> -->
+            <a href="/details/<%= book._id %>/author/<%= book.author %>"">
+            <button id="explore">Explore More</button>
+        </a>
+    </div>
+
+    <% }) %>
+</div>
+<%- include("footer")  %>

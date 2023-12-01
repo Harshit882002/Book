@@ -1,0 +1,20 @@
+<%- include("header")  %>
+<%- include("nav")  %>
+<div id="page1">
+    <h1>Welcome to Register Page</h1>
+    <div class="regform">
+        <form action="/register" method="post">
+            <!-- <input type="text" placeholder="Enter Id" name="id"> -->
+            <input type="text" placeholder="Enter Book Name" name="name" >
+            <input type="text" placeholder="Enter Author Name" name="author">
+            <input type="url" value="" placeholder="Enter Image link" name="link">
+            <input type="text" placeholder="Enter Book Description" name="description">
+            <input type="number" placeholder="Enter Page Number" name="page">
+            <input type="text" placeholder="Enter Publication" name="publication">
+            <input type="year" placeholder="Enter Year" name="year">
+            <input type="number" placeholder="Enter Book Price" name="price">
+            <button>submit</button>
+        </form>
+    </div>
+</div>
+<%- include("footer")  %>
